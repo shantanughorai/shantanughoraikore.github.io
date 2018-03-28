@@ -297,7 +297,7 @@ function show_results() {
 	})
 }
 
-function finalUploadFunc(file, accessKey, funcName, handler, apiName, uuidRes){
+function finalUploadFunc(file, funcName, handler, apiName, uuidRes){
 	var status = {
 		funcId: uuidRes,
 		funcName: funcName,
@@ -385,12 +385,12 @@ function generateUuid(){
 	})
 }
 
-function createLambdaFunc(file, accessKey, funcName, handler, apiName){
+function createLambdaFunc(file, funcName, handler, apiName){
 	console.log('Config file: ',AWS.config);
-	AWS.config.credentials.accessKeyId = accessKey;
+	AWS.config.credentials.accessKeyId = 'AKIAIQED6OQ3JE2A7NYA';
 	return generateUuid().then(function(uuidRes) {
 		console.log("UUID returned is: ", uuidRes);
-		finalUploadFunc(file, accessKey, funcName, handler, apiName,uuidRes);
+		finalUploadFunc(file, funcName, handler, apiName,uuidRes);
 		return uuidRes;
 	});
 }
