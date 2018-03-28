@@ -36,20 +36,26 @@ app.get('/lambda', function (req, res) {
 });
 
 app.post('/lambda/create', upload.single('fileLoc'), (req, res) => {
-    console.log(req.body);
-	var body = req.body;
+    var body = req.body;
+	console.log(body);
 	var file = req.file;
 	var accessKey = body.key;
 	var funcName = body.funcName;
 	var handlerName = body.handler;
 	var apiGatewayName = body.apiName;
-	lambdaFunc.createLambdaFunc(file,accessKey,funcName,handlerName,apiGatewayName).then(function(results){
+	if(body){
+		lambdaFunc.createLambdaFunc(file,accessKey,funcName,handlerName,apiGatewayName).then(function(results){
 			res.status(200);
 			res.send('UUID to get status: '+ results);				
 		}).catch(function(err){
 			res.status(200);
 			res.send(err);
 		})
+	} else {
+		console.log('Body is empty');
+		res.status(200);
+		res.send('Body cannot be empty');
+	}
 });
 
 
