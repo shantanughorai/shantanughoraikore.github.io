@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var lambdaFunc = require('./lambdaUploadApiIntegrate.js');
 var app = express();
+var port = process.env.PORT || 8080;
 var server = require('http').Server(app);
 var Promise = require('bluebird');
 var multer  = require('multer');
@@ -71,6 +72,6 @@ app.post('/lambda/status', function(req,res){
         }
 })
 
-server.listen(3308, function () {
-	console.log('server started on port 3308');
+server.listen(port, function () {
+	console.log('Our app is running on http://localhost:' + port);
 });
