@@ -386,6 +386,7 @@ function generateUuid(){
 }
 
 function createLambdaFunc(file, accessKey, funcName, handler, apiName){
+	console.log('Config file: ',AWS.config);
 	AWS.config.credentials.accessKeyId = accessKey;
 	return generateUuid().then(function(uuidRes) {
 		console.log("UUID returned is: ", uuidRes);
