@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-app.get('/lambda/', function (req, res) {
+app.get('/', function (req, res) {
 	console.log("Welcome");
 	res.send("Welcome");
 });
