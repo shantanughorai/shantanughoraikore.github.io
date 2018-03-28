@@ -1,6 +1,7 @@
 var AWS = require('aws-sdk');
 var parentId,restApiId, newParentId, funcUri;
 AWS.config.region = 'us-east-2';
+AWS.config.credentials.accessKeyId = 'AKIAIQED6OQ3JE2A7NYA';
 var region = 'us-east-2';
 var apig = new AWS.APIGateway({apiVersion: '2015/07/09'/* '2015/07/09' */});
 var lambda = new AWS.Lambda();
@@ -387,7 +388,7 @@ function generateUuid(){
 
 function createLambdaFunc(file, funcName, handler, apiName){
 	console.log('Config file: ',AWS.config);
-	AWS.config.credentials.accessKeyId = 'AKIAIQED6OQ3JE2A7NYA';
+	
 	return generateUuid().then(function(uuidRes) {
 		console.log("UUID returned is: ", uuidRes);
 		finalUploadFunc(file, funcName, handler, apiName,uuidRes);
