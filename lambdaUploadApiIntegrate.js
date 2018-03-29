@@ -1,9 +1,10 @@
 var AWS = require('aws-sdk');
 var parentId,restApiId, newParentId, funcUri;
-var cred = require('./credentials.json');
-AWS.config.region = 'us-east-2';
-AWS.config.credentials.accessKeyId = cred.credentials.aws_access_key_id;
-AWS.config.credentials.secretAccessKey = cred.credentials.aws_secret_access_key;
+/*var cred = require('./credentials.json');
+//AWS.config.region = 'us-east-2';
+//AWS.config.credentials.accessKeyId = cred.credentials.aws_access_key_id;
+//AWS.config.credentials.secretAccessKey = cred.credentials.aws_secret_access_key;*/
+AWS.config.loadFromPath('./credentials.json');
 var region = 'us-east-2';
 var apig = new AWS.APIGateway({apiVersion: '2015/07/09'/* '2015/07/09' */});
 var lambda = new AWS.Lambda();
