@@ -30,10 +30,11 @@ with open("testCases.csv") as csvFile:
 			rowData.append(row[0])
 			rowData.append(row[1])
 			result = testApi.createEntity(row[1])
+			#print(result)
 			if result == "Invalid resource":
 				rowData.append(result)
-				myData.append(result)
-			if json.loads(result):
+				myData.append(rowData)
+			elif json.loads(result):
 				#print(result)
 				rowData.append("PASSED")
 				myData.append(rowData)
@@ -87,9 +88,10 @@ with open("testCases.csv") as csvFile:
 			if len(testData)==3:
 				result=testApi.filterEntity(testData[0],testData[1],testData[2])
 				if json.loads(result):
+					#print(json.dumps(result))
 					result = json.loads(result)
-					#print(result[0])
-					if result[0][testData[1]] == testData[2]:
+					#print(result[0]["userId"])
+					if str(result[0]["userId"]) == str(testData[2]):
 						rowData.append("PASSED")
 						myData.append(rowData)
 					else:

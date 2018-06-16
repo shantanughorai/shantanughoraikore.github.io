@@ -1,15 +1,29 @@
-Show,Posts
-Show,Albums
-Show,Photos 10
-Show,Posts Invalid
-List,Posts
-List,Albums
-List,Invalid
-Update,Posts
-Update,Posts 1 test
-Delete,Posts 1
-Filter,Posts userId 10
-Create,Posts
+Create,Albums
+Create,Photos
 Create,Users
 Create,Comments
 Create,ToDos
+Create,Test
+Show,Posts 1
+Show,Albums 1
+Show,Photos 10
+Show,Posts Invalid
+Show,Users 1
+Show,Todos 1
+Show,Comments
+List,Posts
+List,Photos
+List,Users
+List,Comments
+List,ToDos
+List,Albums
+List,Invalid
+Update,Posts 1 test
+Update,Comments 1 test
+Delete,Albums 1
+Delete,Photos 1
+Delete,ToDos 1
+Delete,Users 1
+Delete,Posts 1
+Filter,Posts userId 1
+Filter,Posts userId 10

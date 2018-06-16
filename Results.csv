@@ -1,15 +1,29 @@
-Show,Posts,PASSED
-Show,Albums,PASSED
-Show,Photos 10,PASSED
-Show,Posts Invalid,FAILED
-List,Posts,PASSED
-List,Albums,PASSED
-List,Invalid,FAILED
-Update,Posts,Test case not proper
-Update,Posts 1 test,FAILED
-Delete,Posts 1,FAILED
-Filter,Posts userId 10,FAILED
-Create,Posts,FAILED
+Create,Albums,FAILED
+Create,Photos,FAILED
 Create,Users,FAILED
 Create,Comments,FAILED
 Create,ToDos,FAILED
+Create,Test,Invalid resource
+Show,Posts 1,PASSED
+Show,Albums 1,PASSED
+Show,Photos 10,PASSED
+Show,Posts Invalid,FAILED
+Show,Users 1,PASSED
+Show,Todos 1,PASSED
+Show,Comments,PASSED
+List,Posts,PASSED
+List,Photos,PASSED
+List,Users,PASSED
+List,Comments,PASSED
+List,ToDos,PASSED
+List,Albums,PASSED
+List,Invalid,FAILED
+Update,Posts 1 test,FAILED
+Update,Comments 1 test,FAILED
+Delete,Albums 1,FAILED
+Delete,Photos 1,FAILED
+Delete,ToDos 1,FAILED
+Delete,Users 1,FAILED
+Delete,Posts 1,FAILED
+Filter,Posts userId 1,PASSED
+Filter,Posts userId 10,PASSED

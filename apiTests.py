@@ -134,7 +134,8 @@ class testApi(object):
 			else:
 				return result
 		else:
-			return "Invalid resource"
+			result = "Invalid resource"
+			return result
 
 	def showEntity(self,entity,id):
 		'''Function to test Show resources. Tests inputs with invalid resource ids'''
