@@ -25,6 +25,6 @@ To execute the test cases from command prompt (in Windows) or terminal (in Mac o
 Once the execution is complete, the test results are generated in Results.csv file and can be viewed which test cases passed and which ones failed.
 
 # Deviations from REST principles
-1. Typicode allows to update a resource using POST method when it actually should have thorwn protocol not suppoetd
-2. Proper status codes are not sent if a resource is missing or if a resource is not found. It sends back 200 OK response code
-3. If the content type is different from JSON, its just throws back entire error trace instead of proper message
+1. Typicode allows to update a resource using POST method when it actually should have thorwn protocol not supported.
+2. Proper status codes are not sent if a resource is missing or if a resource is not found. It sends back 200 OK response code.
+3. If the content type is different from JSON, its just throws back entire error trace instead of proper message.
