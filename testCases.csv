@@ -1,0 +1,15 @@
+Show,Posts
+Show,Albums
+Show,Photos 10
+Show,Posts Invalid
+List,Posts
+List,Albums
+List,Invalid
+Update,Posts
+Update,Posts 1 test
+Delete,Posts 1
+Filter,Posts userId 10
+Create,Posts
+Create,Users
+Create,Comments
+Create,ToDos

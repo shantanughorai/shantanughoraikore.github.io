@@ -1,0 +1,15 @@
+Show,Posts,PASSED
+Show,Albums,PASSED
+Show,Photos 10,PASSED
+Show,Posts Invalid,FAILED
+List,Posts,PASSED
+List,Albums,PASSED
+List,Invalid,FAILED
+Update,Posts,Test case not proper
+Update,Posts 1 test,FAILED
+Delete,Posts 1,FAILED
+Filter,Posts userId 10,FAILED
+Create,Posts,FAILED
+Create,Users,FAILED
+Create,Comments,FAILED
+Create,ToDos,FAILED
