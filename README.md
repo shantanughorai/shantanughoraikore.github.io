@@ -1,4 +1,4 @@
-# Data Driven API automation framework:
+# Keyword and Data Driven API automation framework:
 
 This framework is developed for automating the test cases for testing the typicode APIs. The framework is designed using Python3
 and uses Requests, CSV and JSON modules.
