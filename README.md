@@ -8,7 +8,7 @@ There are 6 test cases developed for this exercise:
 6. Click the first link in TC 4 and validate if table of contents is present
 
 # Setup
-The framework is developed using pytest. In order to runt he tests install the following:
+The framework is developed using pytest. In order to run the tests please install the following:
 1. Python 3.6
 2. Pytest (one can use the follwing command to install pytest: pip install pytest)
 
