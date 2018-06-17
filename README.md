@@ -21,8 +21,9 @@ Delete,<Resource> <Resource id>
 Show,<Resource><Resource id>
 
 # How to execute:
-To execute the test cases from command prompt (in Windows) or terminal (in Mac or Linux) type in the command: python apiMain.py
-Once the execution is complete, the test results are generated in Results.csv file and can be viewed which test cases passed and which ones failed.
+1. Create your test suite by creating the testCases.csv
+2. To execute the test cases from command prompt (in Windows) or terminal (in Mac or Linux) type in the command: python apiMain.py
+3. Once the execution is complete, the test results are generated in Results.csv file and can be viewed which test cases passed and which ones failed.
 
 # Deviations from REST principles
 1. Typicode allows to update a resource using POST method instead of just PUT and PATCH.
